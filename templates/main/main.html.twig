@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Coupons{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/main.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="title">Coupons</h1>
+        </header>
+        <div id="content" class="content">
+            {% for market in markets %}
+                <a href="market/{{market.id}}">
+                    <div class="market">
+                        <img src={{market.imageLink}} alt={{market.title}} />
+                        <h2>{{ market.title }}</h2>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+        <div class="clear"></div>
+        <footer class="footer">
+            Coupons © 2019
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.title
+{
+    font: 60pt/10pt sans-serif;
+}
+
+.header
+{
+    width: 800px;
+    margin: auto;
+}
+
+.content
+{
+    width: 1200px;
+    margin: auto;
+}
+
+.footer
+{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.market
+{
+    float: left;
+    margin: 50px;
+}
+
+.coupon
+{
+    background-color: grey;
+    margin: 20px;
+}
+
+.coupon_title
+{
+    padding: 0 10px 10px 10px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+a
+{
+    text-decoration: none;
+    font: 12pt/10pt tahoma;
+    color: black;
+}
